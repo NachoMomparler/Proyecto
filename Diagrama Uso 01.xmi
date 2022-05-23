@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_m2ogcNqCEeyo7-Gi7rwNrA" name="whiteflash">
+  <eAnnotations xmi:id="_m2ogcdqCEeyo7-Gi7rwNrA" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_m2ogctqCEeyo7-Gi7rwNrA" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_m2ogc9qCEeyo7-Gi7rwNrA" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_m2ogdNqCEeyo7-Gi7rwNrA" name="Administrador"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2ogddqCEeyo7-Gi7rwNrA" memberEnd="_m2ogdtqCEeyo7-Gi7rwNrA _m2ogeNqCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2ogdtqCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2ogdtqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogltqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2ogddqCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2ogd9qCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2ogeNqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogdNqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2ogddqCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2ogedqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2ogetqCEeyo7-Gi7rwNrA" memberEnd="_m2oge9qCEeyo7-Gi7rwNrA _m2ogfdqCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2oge9qCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2oge9qCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogj9qCEeyo7-Gi7rwNrA" isUnique="false" association="_m2ogetqCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2ogfNqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2ogfdqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogdNqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2ogetqCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2ogftqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2ogf9qCEeyo7-Gi7rwNrA" memberEnd="_m2oggNqCEeyo7-Gi7rwNrA _m2oggtqCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2oggNqCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2oggNqCEeyo7-Gi7rwNrA" visibility="public" type="_m2pHgtqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2ogf9qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2oggdqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2oggtqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogdNqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2ogf9qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2ogg9qCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2oghNqCEeyo7-Gi7rwNrA" memberEnd="_m2oghdqCEeyo7-Gi7rwNrA _m2ogh9qCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2oghdqCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2oghdqCEeyo7-Gi7rwNrA" visibility="public" type="_m2pHidqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2oghNqCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2oghtqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2ogh9qCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogdNqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2oghNqCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2ogiNqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_m2ogidqCEeyo7-Gi7rwNrA" name="Usuario"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2ogitqCEeyo7-Gi7rwNrA" memberEnd="_m2ogi9qCEeyo7-Gi7rwNrA _m2ogjdqCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2ogi9qCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2ogi9qCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogj9qCEeyo7-Gi7rwNrA" isUnique="false" association="_m2ogitqCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2ogjNqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2ogjdqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogidqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2ogitqCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2ogjtqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m2ogj9qCEeyo7-Gi7rwNrA" name="Iniciar sesión / registrarse">
+    <ownedComment xmi:id="_m2ogkNqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2ogkdqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2ogktqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2ogk9qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2oglNqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2ogldqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m2ogltqCEeyo7-Gi7rwNrA" name="Borrar cuenta">
+    <ownedComment xmi:id="_m2ogl9qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2ogmNqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2ogmdqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2ogmtqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHgNqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHgdqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m2pHgtqCEeyo7-Gi7rwNrA" name="Modificar usuarios">
+    <ownedComment xmi:id="_m2pHg9qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHhNqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHhdqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHhtqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHh9qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHiNqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m2pHidqCEeyo7-Gi7rwNrA" name="Añadir producto">
+    <ownedComment xmi:id="_m2pHitqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHi9qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHjNqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHjdqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHjtqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHj9qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m2pHkNqCEeyo7-Gi7rwNrA" name="Modificar / borrar producto">
+    <ownedComment xmi:id="_m2pHkdqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHktqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHk9qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHlNqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHldqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHltqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2pHl9qCEeyo7-Gi7rwNrA" memberEnd="_m2pHmNqCEeyo7-Gi7rwNrA _m2pHmtqCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2pHmNqCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2pHmNqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogdNqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pHl9qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pHmdqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2pHmtqCEeyo7-Gi7rwNrA" visibility="public" type="_m2pHkNqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pHl9qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pHm9qCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m2pHnNqCEeyo7-Gi7rwNrA" name="Añadir al carrito / modificar / eliminar">
+    <ownedComment xmi:id="_m2pHndqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHntqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHn9qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHoNqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHodqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHotqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2pHo9qCEeyo7-Gi7rwNrA" memberEnd="_m2pHpNqCEeyo7-Gi7rwNrA _m2pHptqCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2pHpNqCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2pHpNqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogidqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pHo9qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pHpdqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2pHptqCEeyo7-Gi7rwNrA" visibility="public" type="_m2pHnNqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pHo9qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pHp9qCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m2pHqNqCEeyo7-Gi7rwNrA" name="Realizar pago">
+    <ownedComment xmi:id="_m2pHqdqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHqtqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHq9qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHrNqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHrdqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHrtqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2pHr9qCEeyo7-Gi7rwNrA" memberEnd="_m2pHsNqCEeyo7-Gi7rwNrA _m2pHstqCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2pHsNqCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2pHsNqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogidqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pHr9qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pHsdqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2pHstqCEeyo7-Gi7rwNrA" visibility="public" type="_m2pHqNqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pHr9qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pHs9qCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m2pHtNqCEeyo7-Gi7rwNrA" name="Visualizar productos">
+    <ownedComment xmi:id="_m2pHtdqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHttqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHt9qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHuNqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHudqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHutqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2pHu9qCEeyo7-Gi7rwNrA" memberEnd="_m2pHvNqCEeyo7-Gi7rwNrA _m2pHvtqCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2pHvNqCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2pHvNqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogidqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pHu9qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pHvdqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2pHvtqCEeyo7-Gi7rwNrA" visibility="public" type="_m2pHtNqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pHu9qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pHv9qCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m2pHwNqCEeyo7-Gi7rwNrA" name="Añadir productos">
+    <ownedComment xmi:id="_m2pHwdqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHwtqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHw9qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHxNqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHxdqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHxtqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2pHx9qCEeyo7-Gi7rwNrA" memberEnd="_m2pHyNqCEeyo7-Gi7rwNrA _m2pHytqCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2pHyNqCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2pHyNqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogidqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pHx9qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pHydqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2pHytqCEeyo7-Gi7rwNrA" visibility="public" type="_m2pHwNqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pHx9qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pHy9qCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m2pHzNqCEeyo7-Gi7rwNrA" name="Ocultar productos">
+    <ownedComment xmi:id="_m2pHzdqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHztqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pHz9qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH0NqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH0dqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH0tqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2pH09qCEeyo7-Gi7rwNrA" memberEnd="_m2pH1NqCEeyo7-Gi7rwNrA _m2pH1tqCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2pH1NqCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2pH1NqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogidqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pH09qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pH1dqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2pH1tqCEeyo7-Gi7rwNrA" visibility="public" type="_m2pHzNqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pH09qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pH19qCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m2pH2NqCEeyo7-Gi7rwNrA" name="Filtrar por categoria">
+    <ownedComment xmi:id="_m2pH2dqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH2tqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH29qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH3NqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH3dqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH3tqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2pH39qCEeyo7-Gi7rwNrA" memberEnd="_m2pH4NqCEeyo7-Gi7rwNrA _m2pH4tqCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2pH4NqCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2pH4NqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogidqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pH39qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pH4dqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2pH4tqCEeyo7-Gi7rwNrA" visibility="public" type="_m2pH2NqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pH39qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pH49qCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_m2pH5NqCEeyo7-Gi7rwNrA" name="Ver resumen compra">
+    <ownedComment xmi:id="_m2pH5dqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH5tqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH59qCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH6NqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH6dqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+    <ownedComment xmi:id="_m2pH6tqCEeyo7-Gi7rwNrA">
+      <body>...</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m2pH69qCEeyo7-Gi7rwNrA" memberEnd="_m2pH7NqCEeyo7-Gi7rwNrA _m2pH7tqCEeyo7-Gi7rwNrA" navigableOwnedEnd="_m2pH7NqCEeyo7-Gi7rwNrA">
+    <ownedEnd xmi:id="_m2pH7NqCEeyo7-Gi7rwNrA" visibility="public" type="_m2ogidqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pH69qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pH7dqCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m2pH7tqCEeyo7-Gi7rwNrA" visibility="public" type="_m2pH5NqCEeyo7-Gi7rwNrA" isUnique="false" association="_m2pH69qCEeyo7-Gi7rwNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2pH79qCEeyo7-Gi7rwNrA"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

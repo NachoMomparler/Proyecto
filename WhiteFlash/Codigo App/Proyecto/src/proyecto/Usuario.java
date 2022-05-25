@@ -19,6 +19,8 @@ public class Usuario {
     private String contraseña;
     private int telefono;
     private String direccion;
+    private String ciudad;
+    private String pais;
     private boolean admin=false;
 
     public int getId() {
@@ -77,6 +79,22 @@ public class Usuario {
         this.direccion = direccion;
     }
 
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
     public boolean getAdmin() {
         return admin;
     }
@@ -91,7 +109,7 @@ public class Usuario {
     }
     //constructor uso defecto para usuarios normales con id
 
-    public Usuario(int id, String nombre, String Apellidos, String correo, String contraseña, int telefono, String direccion) {
+    public Usuario(int id, String nombre, String Apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, String pais) {
         this.id = id;
         this.nombre = nombre;
         this.Apellidos = Apellidos;
@@ -99,19 +117,23 @@ public class Usuario {
         this.contraseña = contraseña;
         this.telefono = telefono;
         this.direccion = direccion;
+        this.ciudad = ciudad;
+        this.pais = pais;
     }
     
     //constuctor uso defecto para usuarios normales pero sin id
-    public Usuario(String nombre, String Apellidos, String correo, String contraseña, int telefono, String direccion) {
+    public Usuario(String nombre, String Apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, String pais) {
         this.nombre = nombre;
         this.Apellidos = Apellidos;
         this.correo = correo;
         this.contraseña = contraseña;
         this.telefono = telefono;
         this.direccion = direccion;
+        this.ciudad = ciudad;
+        this.pais = pais;
     }
     //constructor admin esta opcion es solo para admin
-    public Usuario(int id, String nombre, String Apellidos, String correo, String contraseña, int telefono, String direccion, boolean admin) {
+    public Usuario(int id, String nombre, String Apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, String pais, boolean admin) {
         this.id = id;
         this.nombre = nombre;
         this.Apellidos = Apellidos;
@@ -119,15 +141,19 @@ public class Usuario {
         this.contraseña = contraseña;
         this.telefono = telefono;
         this.direccion = direccion;
+        this.ciudad = ciudad;
+        this.pais = pais;
         this.admin = admin;
     }
-    public Usuario(String nombre, String Apellidos, String correo, String contraseña, int telefono, String direccion, boolean admin) {
+    public Usuario(String nombre, String Apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, String pais, boolean admin) {
         this.nombre = nombre;
         this.Apellidos = Apellidos;
         this.correo = correo;
         this.contraseña = contraseña;
         this.telefono = telefono;
         this.direccion = direccion;
+        this.ciudad = ciudad;
+        this.pais = pais;
         this.admin = admin;
     }
 }

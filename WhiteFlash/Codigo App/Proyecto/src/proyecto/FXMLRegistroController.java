@@ -32,6 +32,10 @@ public class FXMLRegistroController implements Initializable {
     @FXML
      
    private TextField direccionT;
+    @FXML
+    private Pane paneContra;
+    @FXML
+    private TextField ciudadT;
 
     /**
      * Initializes the controller class.
@@ -50,8 +54,10 @@ public class FXMLRegistroController implements Initializable {
         String contraseña=contraseñaT.getText();
         int telefono=Integer.parseInt(telefonoT.getText());
         String direccion=direccionT.getText();
+        String ciudad=ciudadT.getText();
+        //falta el string de pais con el desplegable
         
-        Usuario uNuevo = new Usuario(nombre,apellidos,correo,contraseña,telefono,direccion);
+       // Usuario uNuevo = new Usuario(nombre,apellidos,correo,contraseña,telefono,direccion);
         
         nombreT.setText("");
         apellidosT.setText("");

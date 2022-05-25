@@ -35,7 +35,7 @@ public class FXMLDocumentController implements Initializable {
         
         //Codigo funcional pero falta enlazarlo con arraylist base de datos
         
-        Usuario u = new Usuario("Ferran","Badia Valls","ferranbadia@gmail.com","12345",612345678,"Calle Sueca, Albalat Valencia",true);
+        Usuario u = new Usuario("Ferran","Badia Valls","ferranbadia@gmail.com","12345",612345678,"Calle Sueca"," Albalat","Valencia",true);
         
         
         if(correoLogin.getText().equals(u.getCorreo()) && contraseñaLogin.getText().equals(u.getContraseña())){

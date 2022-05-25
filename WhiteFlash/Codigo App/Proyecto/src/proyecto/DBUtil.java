@@ -13,9 +13,9 @@ import java.sql.*;
 public class DBUtil {
     
     private Connection conn;
-	private String cadenaConexion = "jdbc:mysql://localhost:3306/examen_programacion";
-	private String nombreUsuario = "root";
-	private String password = "";
+	private String cadenaConexion = "jdbc:mysql://44.194.37.192:3306/whit_whiteflashDataBase";
+	private String nombreUsuario = "whit_Admin";
+	private String password = "1234567";
 	
 	public Connection getConexion() {
 		

@@ -19,7 +19,7 @@ public class UsuarioModel extends DBUtil{
 		
 		try {
 			//Introduce la consulta SQL.    cambiar los datos del usuario
-			String sql = "SELECT id,nombre,categoria,precio,sede FROM juegos ";
+			String sql = "SELECT id,nombre,apellidos,email,contrasenya,telefono,direccion,ciudad,pais,admin FROM clientes ";
 			PreparedStatement stmt = this.getConexion().prepareStatement(sql);
 			ResultSet rs = stmt.executeQuery();  
 		
@@ -27,11 +27,16 @@ public class UsuarioModel extends DBUtil{
 				
 				int id=rs.getInt("id");
 				String nombre=rs.getString("nombre");
-				String categoria=rs.getString("categoria");
-				double precio=rs.getDouble("precio");
-				String sede=rs.getString("sede");
+				String apellidos=rs.getString("apellidos");
+                                String correo=rs.getString("email");
+                                String contraseña=rs.getString("contrasenya");
+				int telefono=rs.getInt("telefono");
+				String direccion=rs.getString("direccion");
+                                String ciudad=rs.getString("ciudad");
+                                int pais=rs.getInt("pais");
+                                int admin=rs.getInt("admin");
 				
-				Usuario u = new Usuario();
+				Usuario u = new Usuario(id,nombre,apellidos,correo,contraseña,telefono,direccion,ciudad,pais,admin);
 				
 				listaUsuarios.add(u);
 			}
@@ -60,6 +65,39 @@ public class UsuarioModel extends DBUtil{
             }
             
             return resultado;
+        }
+
+        public void añadirCliente(String nombre, String apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, String pais, ArrayList<Usuario> listaUsuarios) throws SQLException {
+        
+            //falta poner pais y admin con la lista PRECISO
+            
+           /* Usuario uNuevo = new Usuario(nombre,apellidos,correo,contraseña,telefono,direccion,ciudad);
+           
+            listaUsuarios.add(uNuevo);*/
+            
+           try{
+           String sql = "INSERT INTO clientes(nombre,apellidos,email,contraseña,telefono,direccion,ciudad,pais,admin) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+           PreparedStatement ps=this.getConexion().prepareStatement(sql);
+           
+           ps.setString(1, nombre);
+           ps.setString(2, apellidos);
+           ps.setString(3, correo);
+           ps.setString(4, contraseña);
+           ps.setInt(5, telefono);
+           ps.setString(6, direccion);
+           ps.setString(7, ciudad);
+           ps.setString(8, pais);
+           ps.setInt(9, 0);
+           
+          
+           ps.executeUpdate(sql);
+           
+           this.cerrarConexion();
+       } catch(SQLException e) {
+           e.printStackTrace();
+       }
+          
+          
         }
     
     

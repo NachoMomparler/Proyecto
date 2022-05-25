@@ -5,10 +5,14 @@
 package proyecto;
 
 import java.net.URL;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 
@@ -36,6 +40,8 @@ public class FXMLRegistroController implements Initializable {
     private Pane paneContra;
     @FXML
     private TextField ciudadT;
+    @FXML
+    private ComboBox<String> desplegablePais;
 
     /**
      * Initializes the controller class.
@@ -43,10 +49,21 @@ public class FXMLRegistroController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        
+        PaisModel pm = new PaisModel();
+        
+        //ObservableList<ClaveValor> listaPaises=pm.getPaises();
+        
+       // desplegablePais.setItems(); //observable list de clave valor
+        
+        desplegablePais.getSelectionModel().getSelectedItem();  //devuelve string del seleccionado
     }    
 
     @FXML
-    private void registrar(ActionEvent event) {
+    private void registrar(ActionEvent event) throws SQLException {
+        
+        UsuarioModel um = new UsuarioModel();
+        ArrayList<Usuario> listaUsuarios = um.getUsuarios();
         
         String nombre=nombreT.getText();
         String apellidos=apellidosT.getText();
@@ -55,9 +72,17 @@ public class FXMLRegistroController implements Initializable {
         int telefono=Integer.parseInt(telefonoT.getText());
         String direccion=direccionT.getText();
         String ciudad=ciudadT.getText();
+        
+        
+        
+        
+        String pais="";
         //falta el string de pais con el desplegable
         
-       // Usuario uNuevo = new Usuario(nombre,apellidos,correo,contraseña,telefono,direccion);
+        um.añadirCliente(nombre,apellidos,correo,contraseña,telefono,direccion,ciudad,pais,listaUsuarios);
+        
+        //Usuario uNuevo = new Usuario(nombre,apellidos,correo,contraseña,telefono,direccion);
+        //listaUsuarios.add(uNuevo);
         
         nombreT.setText("");
         apellidosT.setText("");

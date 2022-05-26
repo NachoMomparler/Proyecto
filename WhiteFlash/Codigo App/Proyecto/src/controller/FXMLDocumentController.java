@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXML2.java to edit this template
  */
-package proyecto;
+package controller;
 
 import java.io.IOException;
 import java.net.URL;
@@ -13,6 +13,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 
 
@@ -24,6 +25,8 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private AnchorPane rootPane;
+    @FXML
+    private Button registroButton;
     
 
     
@@ -42,7 +45,6 @@ public class FXMLDocumentController implements Initializable {
         }
     }
 
-    @FXML
     private void registro(ActionEvent event) {
         try {
             AnchorPane pane = FXMLLoader.load(getClass().getResource("FXMLRegistro.fxml"));
@@ -50,6 +52,12 @@ public class FXMLDocumentController implements Initializable {
         } catch (IOException ex) {
             Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    @FXML
+    private void registroButtonAction(ActionEvent event) {
+        System.out.println("Prueba");
+        
     }
     
 }

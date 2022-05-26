@@ -2,10 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package proyecto;
+package model;
 
 import java.sql.*;
 import javafx.collections.ObservableList;
+
+import controller.ClaveValor;
+import controller.Pais;
 
 /**
  *

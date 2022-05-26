@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package proyecto;
+package controller;
 
+import model.UsuarioModel;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;

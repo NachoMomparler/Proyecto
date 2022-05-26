@@ -4,32 +4,52 @@
  */
 package proyecto;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+
 
 /**
  *
  * @author Nacho
  */
 public class FXMLDocumentController implements Initializable {
+
+    @FXML
+    private AnchorPane rootPane;
     
-    @FXML
-    private TextField correoLogin;
-    @FXML
-    private TextField contraseñaLogin;
-    @FXML
-    private Label label;
 
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO  
     }   
+
+    @FXML
+    private void inicioSesion(ActionEvent event) {
+        try {
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("FXMLInicioSesion.fxml"));
+            this.rootPane.getChildren().setAll(pane);
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    @FXML
+    private void registro(ActionEvent event) {
+        try {
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("FXMLRegistro.fxml"));
+            this.rootPane.getChildren().setAll(pane);
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
     
 }

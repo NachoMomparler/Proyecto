@@ -11,7 +11,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proyecto.FXMLInicioSesionController">
    <children>
-      <Label layoutX="225.0" layoutY="54.0" text="Inicio Sesion" textFill="#00eeff">
+      <Label layoutX="225.0" layoutY="54.0" text="Inicio Sesion" textFill="#ffa500">
          <font>
             <Font name="Segoe UI Bold Italic" size="26.0" />
          </font>

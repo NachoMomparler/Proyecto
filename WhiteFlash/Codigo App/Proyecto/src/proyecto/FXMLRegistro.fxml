@@ -81,7 +81,7 @@
                   <Image url="@../../../../iconos%20app/icons8-ciudad-100.png" />
                </image>
             </ImageView>
-            <ComboBox layoutX="236.0" layoutY="12.0" prefWidth="150.0" promptText="Provincia" style="-fx-border-color: orange;" />
+            <ComboBox fx:id="desplegablePais" layoutX="236.0" layoutY="12.0" prefWidth="150.0" promptText="Pais" style="-fx-border-color: orange;" />
             <TextField fx:id="ciudadT" layoutX="51.0" layoutY="13.0" promptText="Ciudad" />
          </children>
       </Pane>

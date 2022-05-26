@@ -23,40 +23,13 @@ public class FXMLDocumentController implements Initializable {
     private TextField correoLogin;
     @FXML
     private TextField contraseñaLogin;
+    @FXML
+    private Label label;
 
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO  
     }   
-
-    @FXML
-    private void login(ActionEvent event) {
-        
-        //Codigo funcional pero falta enlazarlo con arraylist base de datos
-        
-        Usuario u = new Usuario("Ferran","Badia Valls","ferranbadia@gmail.com","12345",612345678,"Calle Sueca"," Albalat","Valencia",true);
-        
-        
-        if(correoLogin.getText().equals(u.getCorreo()) && contraseñaLogin.getText().equals(u.getContraseña())){
-            System.out.println("Programa");
-            
-            //if para comprobar si el usuario que ha iniciado es admin o no para mostrar mas funciones
-            if(u.getAdmin()==true){
-                System.out.println("Es admin");
-            }
-        }
-        else{
-            Alert a = new Alert(Alert.AlertType.ERROR);
-            
-            a.setHeaderText("¡¡¡Error!!!");
-            a.setContentText("El usuario o la contraseña no coinciden");
-            
-            a.showAndWait();
-        }
-          
-    }
-    
-    
     
 }

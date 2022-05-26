@@ -14,14 +14,14 @@ public class Usuario {
     
     private int id;
     private String nombre;
-    private String Apellidos;
+    private String apellidos;
     private String correo;
     private String contraseña;
     private int telefono;
     private String direccion;
     private String ciudad;
-    private String pais;
-    private boolean admin=false;
+    private int pais;
+    private int admin=0;
 
     public int getId() {
         return id;
@@ -40,11 +40,11 @@ public class Usuario {
     }
 
     public String getApellidos() {
-        return Apellidos;
+        return apellidos;
     }
 
-    public void setApellidos(String Apellidos) {
-        this.Apellidos = Apellidos;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 
     public String getCorreo() {
@@ -87,19 +87,19 @@ public class Usuario {
         this.ciudad = ciudad;
     }
 
-    public String getPais() {
+    public int getPais() {
         return pais;
     }
 
-    public void setPais(String pais) {
+    public void setPais(int pais) {
         this.pais = pais;
     }
 
-    public boolean getAdmin() {
+    public int getAdmin() {
         return admin;
     }
 
-    public void setAdmin(boolean admin) {
+    public void setAdmin(int admin) {
         this.admin = admin;
     }
     
@@ -109,10 +109,10 @@ public class Usuario {
     }
     //constructor uso defecto para usuarios normales con id
 
-    public Usuario(int id, String nombre, String Apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, String pais) {
+    public Usuario(int id, String nombre, String apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, int pais) {
         this.id = id;
         this.nombre = nombre;
-        this.Apellidos = Apellidos;
+        this.apellidos = apellidos;
         this.correo = correo;
         this.contraseña = contraseña;
         this.telefono = telefono;
@@ -122,9 +122,9 @@ public class Usuario {
     }
     
     //constuctor uso defecto para usuarios normales pero sin id
-    public Usuario(String nombre, String Apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, String pais) {
+    public Usuario(String nombre, String apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, int pais) {
         this.nombre = nombre;
-        this.Apellidos = Apellidos;
+        this.apellidos = apellidos;
         this.correo = correo;
         this.contraseña = contraseña;
         this.telefono = telefono;
@@ -133,10 +133,10 @@ public class Usuario {
         this.pais = pais;
     }
     //constructor admin esta opcion es solo para admin
-    public Usuario(int id, String nombre, String Apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, String pais, boolean admin) {
+    public Usuario(int id, String nombre, String apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, int pais, int admin) {
         this.id = id;
         this.nombre = nombre;
-        this.Apellidos = Apellidos;
+        this.apellidos = apellidos;
         this.correo = correo;
         this.contraseña = contraseña;
         this.telefono = telefono;
@@ -145,9 +145,9 @@ public class Usuario {
         this.pais = pais;
         this.admin = admin;
     }
-    public Usuario(String nombre, String Apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, String pais, boolean admin) {
+    public Usuario(String nombre, String apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, int pais, int admin) {
         this.nombre = nombre;
-        this.Apellidos = Apellidos;
+        this.apellidos = apellidos;
         this.correo = correo;
         this.contraseña = contraseña;
         this.telefono = telefono;

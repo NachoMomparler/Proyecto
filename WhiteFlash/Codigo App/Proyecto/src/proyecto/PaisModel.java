@@ -44,5 +44,36 @@ public class PaisModel extends DBUtil{
 			this.cerrarConexion();
 		}
 	}
+    public ObservableList<ClaveValor> getPaisesCV() {
+		
+		ObservableList<ClaveValor> listaPaises = null;
+		
+		try {
+			//Introduce la consulta SQL.    cambiar los datos del usuario
+			String sql = "SELECT id,nombre FROM paises";
+			PreparedStatement stmt = this.getConexion().prepareStatement(sql);
+			ResultSet rs = stmt.executeQuery();  
+		
+			while(rs.next()) {
+				
+                            int id = rs.getInt("id");
+                            String nombre = rs.getString("nombre");
+                            
+                            ClaveValor cv = new ClaveValor(id,nombre);
+                            listaPaises.add(cv);
+                            
+			}
+			
+			return listaPaises;
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		} 
+		finally {
+			//Cerramos conexión
+			this.cerrarConexion();
+		}
+	}
     
 }

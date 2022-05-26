@@ -41,7 +41,7 @@ public class FXMLRegistroController implements Initializable {
     @FXML
     private TextField ciudadT;
     @FXML
-    private ComboBox<String> desplegablePais;
+    private ComboBox<ClaveValor> desplegablePais;
 
     /**
      * Initializes the controller class.
@@ -52,9 +52,9 @@ public class FXMLRegistroController implements Initializable {
         
         PaisModel pm = new PaisModel();
         
-        //ObservableList<ClaveValor> listaPaises=pm.getPaises();
+       ObservableList<ClaveValor> listaPaises=pm.getPaisesCV();
         
-       // desplegablePais.setItems(); //observable list de clave valor
+       desplegablePais.setItems(listaPaises); //observable list de clave valor
         
         desplegablePais.getSelectionModel().getSelectedItem();  //devuelve string del seleccionado
     }    

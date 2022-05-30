@@ -10,14 +10,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLRegistroController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLRegistroController">
    <children>
-      <Label layoutX="250.0" layoutY="44.0" text="Registro" textFill="ORANGE">
+      <Label layoutX="307.0" layoutY="45.0" text="Registro" textFill="ORANGE">
          <font>
             <Font name="Segoe UI Bold Italic" size="26.0" />
          </font>
       </Label>
-      <Pane layoutX="100.0" layoutY="115.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
+      <Pane layoutX="157.0" layoutY="116.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
          <children>
             <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -28,7 +28,7 @@
             <TextField fx:id="apellidosT" layoutX="161.0" layoutY="12.0" prefHeight="26.0" prefWidth="225.0" promptText="Apellidos" />
          </children>
       </Pane>
-      <Pane layoutX="100.0" layoutY="177.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
+      <Pane layoutX="157.0" layoutY="178.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
          <children>
             <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -38,7 +38,7 @@
             <TextField fx:id="correoT" layoutX="50.0" layoutY="11.0" prefHeight="26.0" prefWidth="336.0" promptText="correo@example.org" />
          </children>
       </Pane>
-      <Pane layoutX="100.0" layoutY="414.0" prefHeight="50.0" prefWidth="195.0" style="-fx-border-color: black;">
+      <Pane layoutX="157.0" layoutY="415.0" prefHeight="50.0" prefWidth="195.0" style="-fx-border-color: black;">
          <children>
             <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -48,7 +48,7 @@
             <TextField fx:id="telefonoT" layoutX="49.0" layoutY="12.0" prefHeight="26.0" prefWidth="116.0" promptText="Telefono" />
          </children>
       </Pane>
-      <Pane layoutX="100.0" layoutY="295.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
+      <Pane layoutX="157.0" layoutY="296.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
          <children>
             <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -58,13 +58,13 @@
             <TextField fx:id="direccionT" layoutX="50.0" layoutY="11.0" prefHeight="26.0" prefWidth="336.0" promptText="Direccion" />
          </children>
       </Pane>
-      <ImageView fitHeight="105.0" fitWidth="81.0" layoutX="505.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="105.0" fitWidth="81.0" layoutX="562.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../fotos/pngegg.png" />
          </image>
       </ImageView>
-      <Button layoutX="382.0" layoutY="424.0" mnemonicParsing="false" onAction="#registrar" text="Confirmar" />
-      <Pane layoutX="101.0" layoutY="352.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
+      <Button layoutX="439.0" layoutY="425.0" mnemonicParsing="false" onAction="#registrar" text="Confirmar" />
+      <Pane layoutX="158.0" layoutY="353.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
          <children>
             <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -75,7 +75,7 @@
             <TextField fx:id="ciudadT" layoutX="51.0" layoutY="13.0" promptText="Ciudad" />
          </children>
       </Pane>
-      <Pane fx:id="paneContra" layoutX="100.0" layoutY="236.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
+      <Pane fx:id="paneContra" layoutX="157.0" layoutY="237.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
          <children>
             <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>

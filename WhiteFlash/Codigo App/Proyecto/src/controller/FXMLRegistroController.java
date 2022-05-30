@@ -75,16 +75,14 @@ public class FXMLRegistroController implements Initializable {
         String direccion=direccionT.getText();
         String ciudad=ciudadT.getText();
         
+        ClaveValor paisDesplegable=desplegablePais.getSelectionModel().getSelectedItem();
         
-        
-        
-        String pais="";
-        //falta el string de pais con el desplegable
+        int pais = paisDesplegable.getId();
         
         um.añadirCliente(nombre,apellidos,correo,contraseña,telefono,direccion,ciudad,pais,listaUsuarios);
         
-        //Usuario uNuevo = new Usuario(nombre,apellidos,correo,contraseña,telefono,direccion);
-        //listaUsuarios.add(uNuevo);
+        Usuario uNuevo = new Usuario(nombre,apellidos,correo,contraseña,telefono,direccion,ciudad,pais);
+        listaUsuarios.add(uNuevo);
         
         nombreT.setText("");
         apellidosT.setText("");
@@ -92,10 +90,6 @@ public class FXMLRegistroController implements Initializable {
         contraseñaT.setText("");
         telefonoT.setText("");
         direccionT.setText("");
-        
-        /*falta hacer la consulta para añadir 
-        cuando se haga el registro puede mostrar una alerta si queremos
-        y tambien tenemos que hacer que se cambie a la pagina de inicio de sesion*/
         
     }
     

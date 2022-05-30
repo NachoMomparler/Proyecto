@@ -13,7 +13,7 @@ import java.sql.*;
 public class DBUtil {
     
     private Connection conn;
-	private String cadenaConexion = "jdbc:mysql://44.194.37.192:3306/whit_whiteflashDataBase";
+	private String cadenaConexion = "jdbc:mysql://whiteflash.ddns.net:3306/whit_whiteflashDataBase";
 	private String nombreUsuario = "whit_Admin";
 	private String password = "1234567";
 	
@@ -24,7 +24,7 @@ public class DBUtil {
 			this.conn = DriverManager.getConnection(this.cadenaConexion, this.nombreUsuario, this.password);
 			return this.conn;
 		} catch (SQLException e) {
-			e.printStackTrace();
+    			e.printStackTrace();
 			return null;
 		}
 	}

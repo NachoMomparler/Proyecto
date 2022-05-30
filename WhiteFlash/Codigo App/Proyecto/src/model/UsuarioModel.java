@@ -70,27 +70,22 @@ public class UsuarioModel extends DBUtil{
             return resultado;
         }
 
-        public void añadirCliente(String nombre, String apellidos, String correo, String contraseña, int telefono, String direccion, String ciudad, String pais, ArrayList<Usuario> listaUsuarios) throws SQLException {
+        public void añadirCliente(String nombre, String apellidos, String correo, String contrasenya, int telefono, String direccion, String ciudad, int pais, ArrayList<Usuario> listaUsuarios) {
         
-            //falta poner pais y admin con la lista PRECISO
-            
-           /* Usuario uNuevo = new Usuario(nombre,apellidos,correo,contraseña,telefono,direccion,ciudad);
-           
-            listaUsuarios.add(uNuevo);*/
             
            try{
-           String sql = "INSERT INTO clientes(nombre,apellidos,email,contraseña,telefono,direccion,ciudad,pais,admin) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+           String sql = "INSERT INTO clientes(nombre,apellidos,email,contrasenya,telefono,direccion,ciudad,pais,admin) VALUES('"+nombre+"', '"+apellidos+"', '"+correo+"', '"+contrasenya+"', "+telefono+", '"+direccion+"', '"+ciudad+"', '"+pais+"', 0)";
            PreparedStatement ps=this.getConexion().prepareStatement(sql);
            
-           ps.setString(1, nombre);
+          /* ps.setString(1, nombre);
            ps.setString(2, apellidos);
            ps.setString(3, correo);
-           ps.setString(4, contraseña);
+           ps.setString(4, contrasenya);
            ps.setInt(5, telefono);
            ps.setString(6, direccion);
            ps.setString(7, ciudad);
            ps.setString(8, pais);
-           ps.setInt(9, 0);
+           ps.setInt(9, 0);*/
            
           
            ps.executeUpdate(sql);

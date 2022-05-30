@@ -9,6 +9,7 @@ import javafx.collections.ObservableList;
 
 import controller.ClaveValor;
 import controller.Pais;
+import javafx.collections.FXCollections;
 
 /**
  *
@@ -49,7 +50,7 @@ public class PaisModel extends DBUtil{
 	}
     public ObservableList<ClaveValor> getPaisesCV() {
 		
-		ObservableList<ClaveValor> listaPaises = null;
+		ObservableList<ClaveValor> listaPaises=FXCollections.observableArrayList();
 		
 		try {
 			//Introduce la consulta SQL.    cambiar los datos del usuario

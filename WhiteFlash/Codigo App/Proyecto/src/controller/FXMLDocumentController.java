@@ -33,12 +33,13 @@ public class FXMLDocumentController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO  
+        
     }   
 
     @FXML
     private void inicioSesion(ActionEvent event) {
         try {
-            AnchorPane pane = FXMLLoader.load(getClass().getResource("FXMLInicioSesion.fxml"));
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/FXMLInicioSesion.fxml"));
             this.rootPane.getChildren().setAll(pane);
         } catch (IOException ex) {
             Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
@@ -47,7 +48,7 @@ public class FXMLDocumentController implements Initializable {
 
     private void registro(ActionEvent event) {
         try {
-            AnchorPane pane = FXMLLoader.load(getClass().getResource("FXMLRegistro.fxml"));
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/FXMLRegistro.fxml"));
             this.rootPane.getChildren().setAll(pane);
         } catch (IOException ex) {
             Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
@@ -56,7 +57,12 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void registroButtonAction(ActionEvent event) {
-        System.out.println("Prueba");
+        try {
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/FXMLRegistro.fxml"));
+            this.rootPane.getChildren().setAll(pane);
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
     }
     

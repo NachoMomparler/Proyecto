@@ -3,7 +3,7 @@
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 2000px;
+  min-height: 2225px;
 }
 
 .u-section-1 .u-text-1 {
@@ -321,3 +321,87 @@
     margin-right: 5px;
   }
 }
+
+.footer{
+  color: #14173B;
+}
+
+/*redes sociales*/
+
+.socialw {
+  width: 235px;
+  margin: 30px auto 0 auto;
+  overflow: auto;
+  height: 100%;
+  }
+  
+  .social{
+    position:relative;
+  border: 1px solid #292929;
+  width: 37px;
+  height: 62px;
+  float: left;
+  margin-left: 10px;
+  overflow: hidden;
+  }
+  
+  .first {
+  margin-left: 0px;
+  }
+  @-webkit-keyframes fadeInDown {
+  0% {  opacity: 0;  -webkit-transform: translateY(-100px);  }
+  100% {  opacity: 1;  -webkit-transform: translateY(0);}
+  }
+  
+  @-moz-keyframes fadeInDown {
+  0% {  opacity: 0;  -moz-transform: translateY(-100px);}
+  100% {  opacity: 1;  -moz-transform: translateY(0);  }
+  }
+  
+  @-o-keyframes fadeInDown {
+  0% {  opacity: 0;  -o-transform: translateY(-100px);}
+  100% {  opacity: 1;  -o-transform: translateY(0);  }
+  }
+  
+  @keyframes fadeInDown {
+  0% {  opacity: 0;  transform: translateY(-100px);}
+  100% {  opacity: 1;  transform: translateY(0);}
+  }
+  
+
+  .fadeInDown {
+  -webkit-animation: fadeInDown 1s both 0.5s;
+  -moz-animation: fadeInDown 1s both 0.5s;
+  -o-animation: fadeInDown 1s both 0.5s;
+  animation: fadeInDown 1s both 0.5s;
+  }
+  .social img{
+  position:absolute;
+  left:0;
+  top:0;
+  -webkit-transition: margin-top 250ms ease-in;
+  -moz-transition: margin-top 250ms ease-in;
+  -o-transition:  margin-top 250ms ease-in;
+  transition:  margin-top 250ms ease-in;
+  }
+  .social:hover img{
+  margin-top:-62px;
+  }
+  
+  #patrocinadores{
+    width:100%;
+    height:100%;
+    text-align:center;
+    
+  }
+  
+  .info:link{
+      color:black;
+  }
+  .info:hover{
+      color:white;
+      background:#D3D3D3;
+  }
+  
+  #valorac{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;}

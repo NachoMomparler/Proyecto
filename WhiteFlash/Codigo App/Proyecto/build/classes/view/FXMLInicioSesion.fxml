@@ -38,5 +38,6 @@
       </Pane>
       <Button layoutX="368.0" layoutY="415.0" mnemonicParsing="false" onAction="#inicio" text="Confirmar" />
       <Label fx:id="labelError" layoutX="286.0" layoutY="350.0" textFill="RED" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="305.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

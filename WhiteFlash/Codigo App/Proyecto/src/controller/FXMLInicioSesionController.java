@@ -4,16 +4,25 @@
  */
 package controller;
 
+import java.io.IOException;
 import model.UsuarioModel;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 /**
  * FXML Controller class
@@ -27,7 +36,15 @@ public class FXMLInicioSesionController implements Initializable {
     @FXML
     private Label labelError;
     @FXML
-    private TextField contraseñaT;
+    private Button botonAtras;
+    @FXML
+    private AnchorPane rootPane;
+    @FXML
+    private PasswordField passwordField;
+    @FXML
+    private CheckBox verCheckBox;
+    @FXML
+    private Label labelContraseña;
     
 
     /**
@@ -45,14 +62,44 @@ public class FXMLInicioSesionController implements Initializable {
         ArrayList<Usuario> listaUsuarios = um.getUsuarios();
         
         String correo=correoT.getText();
-        String contraseña=contraseñaT.getText();
+        String contraseña=passwordField.getText();
         
         if(um.login(correo, contraseña, listaUsuarios)==true){
-            //cambiar a la pagina de la aplicacion
+            labelError.setText("");
+            //entrar a la app
         }
         else{
             labelError.setText("El correo o contraseña no coincide, por favor intentelo otra vez");
         }
+        
+    }
+
+    @FXML
+    private void volverAtras(ActionEvent event) {
+        
+        try {
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/FXMLDocument.fxml"));
+            this.rootPane.getChildren().setAll(pane);
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+
+    @FXML
+    private void mostrarContraseña(ActionEvent event) {
+        
+        if(verCheckBox.isSelected()){
+            labelContraseña.setText(passwordField.getText());
+        }
+        else{
+            labelContraseña.setText("");
+        }
+        
+        
+        
+        
+        
         
     }
     

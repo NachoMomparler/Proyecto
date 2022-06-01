@@ -1,6 +1,6 @@
 #headimg{
 	width: 2000px;
-	height: 600px;
+	height: 500px;
 }
 
 /*Cuerpo*/
@@ -178,3 +178,9 @@ margin-top:-62px;
     justify-content: center;
     align-items: center;
   }
+
+  #textborder{
+
+    border-color: black;
+  }
+

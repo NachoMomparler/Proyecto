@@ -10,14 +10,31 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLRegistroController">
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLRegistroController">
    <children>
-      <Label layoutX="250.0" layoutY="44.0" text="Registro" textFill="ORANGE">
+       
+             
+      <ImageView fitHeight="619.0" fitWidth="585.0" layoutX="440.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../fotos/pngegg.png" />
+         </image>
+      </ImageView>
+       
+       <Button fx:id="botonAtras" layoutX="37.0" layoutY="15.0" mnemonicParsing="false" onAction="#volverAtras" prefHeight="22.0" prefWidth="49.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../fotos/icons8-atrás-96.png" />
+               </image>
+            </ImageView>
+         </graphic>
+    </Button>
+      <Label layoutX="389.0" layoutY="45.0" text="Registro" textFill="ORANGE">
          <font>
             <Font name="Segoe UI Bold Italic" size="26.0" />
          </font>
       </Label>
-      <Pane layoutX="100.0" layoutY="115.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
+      <Pane layoutX="240.0" layoutY="113.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
          <children>
             <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -28,7 +45,7 @@
             <TextField fx:id="apellidosT" layoutX="161.0" layoutY="12.0" prefHeight="26.0" prefWidth="225.0" promptText="Apellidos" />
          </children>
       </Pane>
-      <Pane layoutX="100.0" layoutY="177.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
+      <Pane layoutX="240.0" layoutY="175.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
          <children>
             <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -38,7 +55,7 @@
             <TextField fx:id="correoT" layoutX="50.0" layoutY="11.0" prefHeight="26.0" prefWidth="336.0" promptText="correo@example.org" />
          </children>
       </Pane>
-      <Pane layoutX="100.0" layoutY="414.0" prefHeight="50.0" prefWidth="195.0" style="-fx-border-color: black;">
+      <Pane layoutX="240.0" layoutY="412.0" prefHeight="50.0" prefWidth="195.0" style="-fx-border-color: black;">
          <children>
             <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -48,7 +65,7 @@
             <TextField fx:id="telefonoT" layoutX="49.0" layoutY="12.0" prefHeight="26.0" prefWidth="116.0" promptText="Telefono" />
          </children>
       </Pane>
-      <Pane layoutX="100.0" layoutY="295.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
+      <Pane layoutX="240.0" layoutY="293.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
          <children>
             <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -58,13 +75,8 @@
             <TextField fx:id="direccionT" layoutX="50.0" layoutY="11.0" prefHeight="26.0" prefWidth="336.0" promptText="Direccion" />
          </children>
       </Pane>
-      <ImageView fitHeight="105.0" fitWidth="81.0" layoutX="505.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../fotos/pngegg.png" />
-         </image>
-      </ImageView>
-      <Button layoutX="382.0" layoutY="424.0" mnemonicParsing="false" onAction="#registrar" text="Confirmar" />
-      <Pane layoutX="101.0" layoutY="352.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
+      <Button layoutX="522.0" layoutY="422.0" mnemonicParsing="false" onAction="#registrar" text="Confirmar" />
+      <Pane layoutX="240.0" layoutY="352.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
          <children>
             <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -75,7 +87,7 @@
             <TextField fx:id="ciudadT" layoutX="51.0" layoutY="13.0" promptText="Ciudad" />
          </children>
       </Pane>
-      <Pane fx:id="paneContra" layoutX="100.0" layoutY="236.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
+      <Pane fx:id="paneContra" layoutX="240.0" layoutY="236.0" prefHeight="50.0" prefWidth="400.0" style="-fx-border-color: black;">
          <children>
             <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>

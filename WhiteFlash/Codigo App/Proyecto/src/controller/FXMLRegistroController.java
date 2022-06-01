@@ -4,18 +4,24 @@
  */
 package controller;
 
+import java.io.IOException;
 import model.UsuarioModel;
 import model.PaisModel;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
 /**
@@ -44,6 +50,10 @@ public class FXMLRegistroController implements Initializable {
     private TextField ciudadT;
     @FXML
     private ComboBox<ClaveValor> desplegablePais;
+    @FXML
+    private Button botonAtras;
+    @FXML
+    private AnchorPane rootPane;
 
     /**
      * Initializes the controller class.
@@ -90,6 +100,18 @@ public class FXMLRegistroController implements Initializable {
         contraseñaT.setText("");
         telefonoT.setText("");
         direccionT.setText("");
+        
+    }
+
+    @FXML
+    private void volverAtras(ActionEvent event) {
+        
+        try {
+            AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/FXMLDocument.fxml"));
+            this.rootPane.getChildren().setAll(pane);
+        } catch (IOException ex) {
+            Logger.getLogger(FXMLDocumentController.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
     }
     

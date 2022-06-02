@@ -1,6 +1,9 @@
 #headimg{
-	width: 2000px;
-	height: 500px;
+	
+  width: 1384px;
+	height: 300px;
+  padding-left: 17%;
+  
 }
 
 /*Cuerpo*/
@@ -186,5 +189,12 @@ margin-top:-62px;
     border: 110px;
   }
 
+
+  /*Fuente del menú de inicio*/
+
+  #texto{
+    font: bolder;
+    font-size: large;
+  }
   
 

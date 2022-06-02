@@ -5,8 +5,9 @@
 
 /*Cuerpo*/
 
-#cuerpo{
-background-color: lightblue
+.cuerpo{
+  background-image: linear-gradient(to right, #ee1c6f, #242c99);
+  min-height: 885px;
 }
 
 /* redes sociales en el footer*/
@@ -182,5 +183,8 @@ margin-top:-62px;
   #textborder{
 
     border-color: black;
+    border: 110px;
   }
+
+  
 

@@ -70,6 +70,29 @@
 
 				</div>
 			</nav>
+
+			<!-- Barra de progreso -->
+	<div id="header" class="bg-white fixed w-full z-10 top-0 hidden animated" style="opacity: .95;">
+		<div class="bg-white">
+			<div class="flex flex-wrap items-center content-center">
+				<div class="flex w-1/2 justify-start text-white font-extrabold">
+					<a class="flex text-gray-900 no-underline hover:text-gray-900 hover:no-underline pl-2" href="#">
+						<title>⚡WHITEFLASH</title>
+						<span class="hidden w-0 md:w-auto md:block pl-1">WHITEFLASH APP</span>
+					</a>
+				</div>
+				<div class="flex w-1/2 justify-end content-center">
+
+				</div>
+			</div>
+	</div>
+
+		<!-- Barra de progreso/Movimiento -->>
+		<div id="progress" class="h-1 bg-white shadow"
+			style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+	</div>
+
+
 			<!-- Contenido/Descarga -->
 			<div class="cuerpo">
 
@@ -237,6 +260,28 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Barra de progreso -->
+	<div id="header" class="bg-white fixed w-full z-10 top-0 hidden animated" style="opacity: .95;">
+		<div class="bg-white">
+			<div class="flex flex-wrap items-center content-center">
+				<div class="flex w-1/2 justify-start text-white font-extrabold">
+					<a class="flex text-gray-900 no-underline hover:text-gray-900 hover:no-underline pl-2" href="#">
+						<title>⚡WHITEFLASH</title>
+						<span class="hidden w-0 md:w-auto md:block pl-1">WHITEFLASH APP</span>
+					</a>
+				</div>
+				<div class="flex w-1/2 justify-end content-center">
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Barra de progreso/Movimiento -->>
+		<div id="progress" class="h-1 bg-white shadow"
+			style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+	</div>
 	<!-- Footer -->
 	<footer class="bg-gray-900">
 		<td>
@@ -265,6 +310,45 @@
 		</div>
 
 	</footer>
+
+
+<!-- Script Barra de progreso -->
+
+<script>
+		
+	var h = document.documentElement,
+		b = document.body,
+		st = 'scrollTop',
+		sh = 'scrollHeight',
+		progress = document.querySelector('#progress'),
+		scroll;
+	var scrollpos = window.scrollY;
+	var header = document.getElementById("header");
+
+	document.addEventListener('scroll', function () {
+
+		/*Refresh scroll % width*/
+		scroll = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+		progress.style.setProperty('--scroll', scroll + '%');
+
+		/*Apply classes for slide in bar*/
+		scrollpos = window.scrollY;
+
+		if (scrollpos > 100) {
+			header.classList.remove("hidden");
+			header.classList.remove("fadeOutUp");
+			header.classList.add("slideInDown");
+		}
+		else {
+			header.classList.remove("slideInDown");
+			header.classList.add("fadeOutUp");
+			header.classList.add("hidden");
+		}
+
+	});
+
+</script>
+
 </body>
 
 </html>

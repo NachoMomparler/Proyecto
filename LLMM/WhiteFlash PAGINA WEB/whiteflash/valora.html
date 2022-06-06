@@ -12,8 +12,11 @@
 	<meta name="keywords" content="keywords,here">
 	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
-
 	<link rel="icon" href="pngegg.png">
+
+	<script>
+    alert("Esta és la página de valoración. Déja tu reseña y comentarios aquí. Haz click en ACEPTAR para continuar");
+	</script>
 </head>
 
 <body class="cuerpo">
@@ -23,8 +26,7 @@
   <nav class="bg-gray-900 p-4 mt-0 w-full">
     <div class="container mx-auto flex items-center">
       <div class="flex text-white font-extrabold">
-        <a class="flex text-white text-base no-underline hover:text-white hover:no-underline" href="#">
-          <title>⚡WHITEFLASH</title>
+        <a class="flex text-white text-base no-underline hover:text-white hover:no-underline">
           <span class="hidden w-0 md:w-auto md:block pl-1">WHITEFLASHTEAM</span>
         </a>
       </div>
@@ -62,8 +64,8 @@
 		<div class="bg-white">
 			<div class="flex flex-wrap items-center content-center">
 				<div class="flex w-1/2 justify-start text-white font-extrabold">
-					<a class="flex text-gray-900 no-underline hover:text-gray-900 hover:no-underline pl-2" href="#">
-						<title>⚡WHITEFLASH</title>
+					<a class="flex text-gray-900 no-underline hover:text-gray-900 hover:no-underline pl-2">
+						<title>⚡WHITEFLASH /</title>
 						<span class="hidden w-0 md:w-auto md:block pl-1">WHITEFLASH APP</span>
 					</a>
 				</div>
@@ -74,7 +76,7 @@
 
 		</div>
 
-		<!-- Barra de progreso/Movimiento -->>
+		<!-- Barra de progreso/Movimiento -->
 		<div id="progress" class="h-1 bg-white shadow"
 			style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
 	</div>
@@ -171,7 +173,9 @@
 									placeholder="Escribe aquí tu comentario:"> </textarea></p>
 						</div>
 						<div class="texto">
-							<button class="button" onclick="location.href='valora.html'">ENVIAR</button>
+							
+							<a href="valora.html" onclick="alert('HAS ENVIADO TU VALORACIÓN, MUCHAS GRÀCIAS!!!'); return false;">Enviar</a>
+							
 						</div>
 					</div>
 				</div>

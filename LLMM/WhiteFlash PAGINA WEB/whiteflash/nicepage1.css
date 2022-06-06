@@ -18403,33 +18403,6 @@ a.pswp__share--download:hover {
     transform: scale3d(var(--animation-zoom_in_up-scale), var(--animation-zoom_in_up-scale), var(--animation-zoom_in_up-scale)) translate3d(0, var(--animation-zoom_in_up-translate_y), 0);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes customAnimationIn {
-  from {
-    transform-origin: center center;
-    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
-    opacity: var(--animation-custom_in-opacity);
-  }
-  to {
-    transform-origin: center center;
-    transform: translate3d(-50% !important, -50% !important, 0);
-    opacity: 1;
-  }
-}
-@keyframes customAnimationOut {
-  from {
-    transform-origin: center center;
-    transform: translate3d(-50% !important, -50% !important, 0);
-    opacity: 1;
-  }
-  to {
-    transform-origin: center center;
-    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
-    opacity: var(--animation-custom_in-opacity);
-  }
 }
 .customAnimationIn {
   animation-name: customAnimationIn;
@@ -36156,111 +36129,18 @@ a.u-button-style.u-button-style.active > .u-text-active-grey-90[class*="u-border
 a.u-link.u-text-hover-grey-90:hover {
   color: #1a1a1a !important;
 }
-/*end-variables colors*/
+/*FIN variables de color*/
 
-/*begin-variables sitestylecss*/
+
 
 
 
         .u-body
-        {
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        --theme-sheet-width-xl: 1140px;
+        { --theme-sheet-width-xl: 1140px;
         --theme-sheet-width-lg: 940px;
         --theme-sheet-width-md: 720px;
         --theme-sheet-width-sm: 540px;
         --theme-sheet-width-xs: 340px;
-        
-        
-        
-        
-        
-        
         }
 
         /** common-rules **/

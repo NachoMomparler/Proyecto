@@ -1,5 +1,6 @@
- #cuerpo{
-   background-color: lightblue;
+ .cuerpo{
+  background-image: linear-gradient(to right, #ee1c6f, #242c99);
+  min-height: 885px;
  }
 
  .u-section-1 {
@@ -7,7 +8,7 @@
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 2225px;
+  min-height: 2350px;
 }
 
 .u-section-1 .u-text-1 {
@@ -404,7 +405,7 @@
   }
   .info:hover{
       color:white;
-      background:#D3D3D3;
+      background:#ebe4e4;
   }
   
   #valorac{

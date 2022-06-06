@@ -1,12 +1,16 @@
 #headimg{
-	width: 2000px;
-	height: 500px;
+	
+  width: 1384px;
+	height: 300px;
+  padding-left: 17%;
+  
 }
 
 /*Cuerpo*/
 
-#cuerpo{
-background-color: lightblue
+.cuerpo{
+  background-image: linear-gradient(to right, #ee1c6f, #242c99);
+  min-height: 885px;
 }
 
 /* redes sociales en el footer*/
@@ -183,5 +187,43 @@ margin-top:-62px;
   #textborder{
 
     border-color: black;
+    border: 110px;
   }
+
+
+  /*Fuente del menú de inicio*/
+
+  #texto{
+    font: bolder;
+    font-size: large;
+  }
+
+  /* adaptación a dispositivos*/
+
+  @media screen and (max-width: 980px){
+    #contenedor{
+        width: 90%;
+    }
+    #contenido{
+        width: 60%;
+    }
+    #barra_lateral{
+        width:30%;
+    }
+}
+
+@media screen and (max-width: 480px){
+  #encabezado{
+      height: auto;
+  }
+  #contenido{
+      width: auto;
+  }
+  #barra_lateral{
+      display:none;
+  }
+}
+
+
+  
 

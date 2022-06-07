@@ -201,7 +201,7 @@ margin-top:-62px;
 
   /* adaptación a dispositivos*/
 
-  @media screen and (max-width: 2000px){
+  @media screen and (max-width: 2000%){
     #contenedor{
         width: 100%;
     }

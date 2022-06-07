@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>⚡WHITEFLASH</title>
@@ -11,18 +11,78 @@
 	<meta name="description" content="description here">
 	<meta name="keywords" content="keywords,here">	
 	<link rel="stylesheet" href="estilosmod.css">
-	<script src=""></script>
 	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
 	<link rel="icon" href="pngegg.png">
 </head>
 
 <body class="cuerpo">
 
-	<!-- Foto de encabezado -->
-	<img src="Fotos/Other/title.jpeg" id="headimg" alt="lgo" />
-	
+	<header>
 
-		<!-- Titulo -->   
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg shadow-md py-2 bg-white relative flex items-center w-full justify-between">
+		  <div class="px-6 w-full flex flex-wrap items-center justify-between">
+			<div class="flex items-center">
+			  <button
+				class="navbar-toggler border-0 py-3 lg:hidden leading-none text-xl bg-transparent text-gray-600 hover:text-gray-700 focus:text-gray-700 transition-shadow duration-150 ease-in-out mr-2"
+				type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContentY"
+				aria-controls="navbarSupportedContentY" aria-expanded="false" aria-label="Toggle navigation">
+				<svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-5" role="img"
+				  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+				  <path fill="currentColor"
+					d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+				  </path>
+				</svg>
+			  </button>
+			</div>
+			<div class="navbar-collapse collapse grow items-center" id="navbarSupportedContentY">
+			  <ul class="navbar-nav mr-auto lg:flex lg:flex-row">
+				<li class="nav-item">
+				  <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+					href="index.html" data-mdb-ripple="true" data-mdb-ripple-color="light">INICIO</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+					href="Whiteflash.html" data-mdb-ripple="true" data-mdb-ripple-color="light">WHITEFLASH</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+					href="nosotros.html" data-mdb-ripple="true" data-mdb-ripple-color="light">NOSOTROS</a>
+				</li>
+				<li class="nav-item mb-2 lg:mb-0">
+				  <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+					href="valora.html" data-mdb-ripple="true" data-mdb-ripple-color="light">VALORACIÓN</a>
+				</li>
+				<li class="nav-item mb-2 lg:mb-0">
+					<a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out"
+					  href="CONTACTO.html" data-mdb-ripple="true" data-mdb-ripple-color="light">CONTACTO</a>
+					  </li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		<!-- Navbar -->
+	  
+		<!-- Background image -->
+		<div class="relative overflow-hidden bg-no-repeat bg-cover" style="
+		  background-position: 50%;
+		  background-image: url('Fotos/Other/title.jpeg');
+		  height: 350px;
+		">
+		  <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+			style="background-color: rgba(0, 0, 0, 0.75)">
+			<div class="flex justify-center items-center h-full">
+			  <div class="text-center text-white px-6 md:px-12">
+				<h1 class="text-5xl font-bold mt-0 mb-6">WHITEFLASH</h1>
+				<h3 class="text-3xl font-bold mb-8">APP</h3>
+			
+				
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- Background image -->
+	  </header> 
 <br>
 <br>
 <br>
@@ -34,38 +94,7 @@
 
 		<div class="mx-0 sm:mx-6">
 
-			<!-- Menú -->
-			<nav class="mt-0 w-full" >
-				<div class="container mx-auto flex items-center">
-
-					<div class="flex w-1/2 pl-4 text-sm" >
-						<ul class="list-reset flex justify-between flex-1 md:flex-none items-center" id="texto" >
-							<li class="mr-2">
-								<a class="inline-block py-2 px-2 text-gray-50 no-underline hover:underline" 
-									href="post.html">INICIO</a>
-							</li>
-							<li class="mr-2">
-								<a class="inline-block text-gray-50 no-underline hover:text-blue-200 hover:underline py-2 px-2"
-									href="Whiteflash.html">WHITEFLASH</a>
-							</li>
-							<li class="mr-2">
-								<a class="inline-block text-gray-50 no-underline hover:text-blue-200 hover:underline py-2 px-2"
-									href="nosotros.html">NOSOTROS</a>
-							</li>
-							<li class="mr-2">
-								<a class="inline-block text-gray-50 no-underline hover:text-blue-200 hover:underline py-2 px-2"
-									href="valora.html">VALORACIÓN</a>
-							</li>
-
-							<li class="mr-2">
-								<a class="inline-block text-gray-50 no-underline hover:text-blue-200 hover:underline py-2 px-2"
-									href="CONTACTO.html">CONTACTO</a>
-							</li>
-						</ul>
-					</div>
-
-				</div>
-			</nav>
+			
 
 			<!-- Barra de progreso -->
 	<div id="header" class="bg-white fixed w-full z-10 top-0 hidden animated" style="opacity: .95;">
@@ -85,7 +114,7 @@
 
 		<!-- Barra de progreso/Movimiento -->
 		<div id="progress" class="h-1 bg-white shadow"
-			style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+			style="background:linear-gradient(to right, #107c72 var(--scroll), transparent 0);"></div>
 	</div>
 
 
